@@ -2,8 +2,8 @@ import React from "react";
 import { render, screen } from "@testing-library/react";
 import App from "../App";
 
-test("renders 'working....' text", () => {
+test("renders 'Testcase added' text", () => {
   render(<App />);
-  const workingTextElement = screen.getByText("working....");
+  const workingTextElement = screen.getByText("Testcase added");
   expect(workingTextElement).toBeInTheDocument();
 });
